@@ -1,0 +1,17 @@
+/*studentlist {
+    border-style: solid;
+    padding : 5px;
+	display: block ;
+	margin:1.5em;
+}*/
+
+studentlist {
+	padding: 50px;
+}
+usn,name,college,branch,joindate,emailid {
+	display: block;
+}
+student1,student2,student3 {
+	display: block;
+	padding: 25px;
+}

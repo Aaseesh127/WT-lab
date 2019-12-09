@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function vowel(){
+	var st1 = document.getElementById("str1").value;
+	var pos = st1.search(/[aeiouAEIOU]/);
+	if(pos <0 )
+	alert("pattern not found");
+	else
+	alert("vowel found at "+ (pos+1));
+} 
+	
+function rev(n){
+	var temp = n.split("").reverse().join("");
+	alert(temp);
+}
+</script>
+</head>
+<body>
+<h3> 4th program </h3>
+<form>
+<input type="text" id="str1"/> 
+<br>
+<input type="button" onclick="vowel();" value="submit"/> 	 	 	
+<input type="button" onclick="rev(str1.value);" value="Reverse"/> 	 	 	
+</form>
+</body>
+</html>
+

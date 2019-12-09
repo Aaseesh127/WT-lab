@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="myP1"></p>
+</body>
+<script>
+var lock = 0 ;
+var i = 10;
+setInterval(function(){
+  if(lock == 0 ){
+    document.getElementById('myP1').style.color='red';
+    document.getElementById('myP1').innerHTML = "textGrowing";
+    document.getElementById('myP1').style.fontSize = i + 'pt';
+    i = i + 1;
+    if(i > 50) lock = 1 ;
+  }
+  if(lock == 1 ){
+    document.getElementById('myP1').style.color='blue';
+    document.getElementById('myP1').innerHTML = "textshrinking";
+    document.getElementById('myP1').style.fontSize = i+'pt';
+    i = i - 1;
+    if(i < 10) lock = 0 ;
+  }
+},200)
+</script>
+</html>
